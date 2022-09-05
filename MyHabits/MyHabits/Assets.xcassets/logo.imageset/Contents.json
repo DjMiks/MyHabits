@@ -1,10 +1,7 @@
 {
-  "colors" : [
+  "images" : [
     {
-      "color" : {
-        "platform" : "universal",
-        "reference" : "systemPurpleColor"
-      },
+      "filename" : "AppIcon-80px-40pt@2x.png",
       "idiom" : "universal"
     }
   ],
