@@ -33,9 +33,9 @@ extension UIView {
         switch (top, bottom) {
         case(true, false):
             maskCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
-        case(true, false):
+        case(true, true):
             maskCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
-        case(true, false):
+        case(true, true):
             maskCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner, .layerMaxXMaxYCorner, .layerMinXMaxYCorner]
         default: break
         }

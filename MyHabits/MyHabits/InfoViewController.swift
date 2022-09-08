@@ -141,6 +141,7 @@ class InfoViewController: UIViewController {
         infoStackView.addArrangedSubview(self.infoText5)
         infoStackView.addArrangedSubview(self.infoText6)
         infoStackView.addArrangedSubview(self.infoText7)
+        infoStackView.addArrangedSubview(self.sourceText)
           return infoStackView
     }()
 

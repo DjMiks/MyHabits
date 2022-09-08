@@ -27,8 +27,7 @@ class HabitDetailsViewController: UIViewController {
         
         tableView.dataSource = self
         tableView.delegate = self
-        
-         return tableView
+          return tableView
     }()
 
     private lazy var dateFormatter: DateFormatter = {
@@ -39,7 +38,7 @@ class HabitDetailsViewController: UIViewController {
           return formatter
     }()
     
-    // MARK: CYCLE
+    // MARK: LEFECYCLE
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,7 +52,7 @@ class HabitDetailsViewController: UIViewController {
     
     private func setupView() {
         navigationController?.navigationBar.tintColor = Styles.purpleColor
-        navigationItem.rightBarButtonItem = UIBarButtonItem (
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
             title: "Править", style: .done, target: self, action: #selector(editButtoPressed)
         )
         navigationItem.title = habit.name
@@ -78,7 +77,6 @@ class HabitDetailsViewController: UIViewController {
         let viewController = AddHabitController()
         viewController.habit = habit
         viewController.addHabitType = .edit(removeAction: {[weak self] in self?.navigationController?.popToRootViewController(animated: true)
-            
         })
         viewController.nameTextField.text = habit.name
         viewController.colorPickerView.backgroundColor = habit.color
@@ -87,6 +85,7 @@ class HabitDetailsViewController: UIViewController {
         present(viewController, animated: true, completion: nil)
     }
   }
+
 
 //MARK: EXTESIONS
 

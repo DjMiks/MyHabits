@@ -22,42 +22,42 @@ class HabitCollectionViewCell: UICollectionViewCell {
     
     private lazy var nameLabel: UILabel = {
         let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
         label.applyHeadlineStyle()
         label.numberOfLines = 2
-        label.translatesAutoresizingMaskIntoConstraints = false
          return label
     }()
     
     private lazy var dateLabel: UILabel = {
         let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
         label.applyHeadlineStyle()
         label.textColor = .systemGray
-        label.translatesAutoresizingMaskIntoConstraints = false
           return label
     }()
     
     private lazy var trackerLabel: UILabel = {
         let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
         label.applyCaptionStyle()
         label.applyFootnoteStyle()
         label.text = "Счётчик: \(habit.trackDates.count)"
-        label.translatesAutoresizingMaskIntoConstraints = false
           return label
      }()
     private lazy var checkBoxButton: UIButton = {
         let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
         button.roundCornerWithRadius(18, top: true, bottom: true, shadowEnabled: false)
         button.backgroundColor = .white
         button.layer.borderWidth = 2
         button.addTarget(self, action: #selector(checkBoxButtonPressed), for: .touchUpInside)
-        button.translatesAutoresizingMaskIntoConstraints = false
          return button
     }()
     
     private lazy var chekMarkImageView: UIImageView = {
         let imageView = UIImageView(image: UIImage.init(systemName: "checkmark"))
-        imageView.tintColor = .white
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.tintColor = .white
           return imageView
     }()
     
@@ -102,8 +102,8 @@ class HabitCollectionViewCell: UICollectionViewCell {
             trackerLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -baseInset),
             
             checkBoxButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -26),
-            checkBoxButton.heightAnchor.constraint(equalTo: imageSize),
-            checkBoxButton.widthAnchor.constraint(equalTo: imageSize),
+            checkBoxButton.heightAnchor.constraint(equalToConstant: imageSize),
+            checkBoxButton.widthAnchor.constraint(equalToConstant: imageSize),
             checkBoxButton.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -47),
             
             chekMarkImageView.centerXAnchor.constraint(equalTo: checkBoxButton.centerXAnchor),

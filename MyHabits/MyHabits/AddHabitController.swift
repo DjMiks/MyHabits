@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Foundation
 
 
 
@@ -33,7 +34,7 @@ enum AddHabitType {
     }
 }
 
-class AddHabitController: UIViewController {
+class AddHabitController: UIViewController, UITextFieldDelegate {
     
     // MARK: Setup
     
@@ -50,24 +51,24 @@ class AddHabitController: UIViewController {
     
     // MARK: SUBVIEW
     
-    private lazy var navBar: UINavigstionBar = {
+    private lazy var navBar: UINavigationBar = {
         let navBar = UINavigationBar()
         let navItem = UINavigationItem()
         let leftBarButtonItem = UIBarButtonItem(title: "Отменить", style: UIBarButtonItem.Style.plain, target: self, action: #selector(actionCencelButton))
         let rightBarButtonItem = UIBarButtonItem(title: "Сохранить", style: UIBarButtonItem.Style.done, target: self, action: #selector(actionSaveButton))
         
         navBar.translatesAutoresizingMaskIntoConstraints = false
+        navBar.backgroundColor = .systemGray
         
         leftBarButtonItem.tintColor = Styles.purpleColor
-        reghtBarButtonItem.tintColor = Styles.purpleColor
+        rightBarButtonItem.tintColor = Styles.purpleColor
         
         navItem.rightBarButtonItem = rightBarButtonItem
         navItem.leftBarButtonItem = leftBarButtonItem
         navItem.title = addHabitType.title
         
         navBar.setItems([navItem], animated: true)
-        navBar.backgroundColor = .systemGray
-           return navBar
+          return navBar
     }()
     
     lazy var datePicker: UIDatePicker = {
@@ -75,25 +76,27 @@ class AddHabitController: UIViewController {
         picker.translatesAutoresizingMaskIntoConstraints = false
         picker.datePickerMode = .time
         picker.preferredDatePickerStyle = .wheels
-        picker.addTarget(self, action: #selector(dataPickerChanged(picker)), for: .valueChanged)
+        picker.addTarget(self, action: #selector(datePickerChanged(picker:)), for: .valueChanged)
           return picker
     }()
     
     private lazy var nameLabel: UILabel = {
         let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "НАЗВАНИЕ"
         label.applyFootnoteStyle()
         label.numberOfLines = 1
+        label.translatesAutoresizingMaskIntoConstraints = false
          return label
     }()
     
     lazy var nameTextField: UITextField = {
         let textField = UITextField()
-        textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.delegate = self
         textField.placeholder = "Бегать по утрам, спать 8 часов."
         textField.font = UIFont.systemFont(ofSize: 13, weight: .regular)
+        
+        textField.delegate = self
+        
+        textField.translatesAutoresizingMaskIntoConstraints = false
           return textField
     }()
     
@@ -108,11 +111,14 @@ class AddHabitController: UIViewController {
     lazy var colorPickerView: UIView = {
         let view = UIView()
         view.roundCornerWithRadius(15, top: true, bottom: true, shadowEnabled: false)
-        view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = habit.color
+        
         
         let tapColor = UITapGestureRecognizer(
             target: self, action: #selector(tapColorPicker))
+        view.addGestureRecognizer(tapColor)
+        
+        view.translatesAutoresizingMaskIntoConstraints = false
          return view
     }()
     
@@ -133,20 +139,20 @@ class AddHabitController: UIViewController {
     lazy var habitTimeLabelText: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Каждый день в"
+        label.text = "Каждый день в "
          return label
     }()
     
     lazy var habitTimeLabelTime: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "\(dateFormatter.string(from: datePicker.date))"
+        label.text = " \(dateFormatter.string(from: datePicker.date))"
         label.tintColor = Styles.purpleColor
         label.textColor = Styles.purpleColor
           return label
     }()
     
-    private lazy var dataFormatter: DateFormatter = {
+    private lazy var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.timeStyle = .short
           return formatter
@@ -190,7 +196,7 @@ class AddHabitController: UIViewController {
         view?.addSubview(datePicker)
         
         if case .edit = addHabitType {
-            self.view?.addSubview(self.deleteHabitButton)
+            self.view.addSubview(self.deleteHabitButton)
             
             let constrForButton = [
                 deleteHabitButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -8),
@@ -207,47 +213,49 @@ class AddHabitController: UIViewController {
             navBar.heightAnchor.constraint(equalToConstant: 44),
             navBar.widthAnchor.constraint(equalTo: view.widthAnchor),
             
+            nameLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16),
             nameLabel.topAnchor.constraint(equalTo: navBar.bottomAnchor, constant:22),
-            nameLabel.leadingAnchor.constraint(equalTo: view?.safeAreaLayoutGuide.leadingAnchor, constant: 16),
             
-            nameTextField.topAnchor.constraint(equalTo: nameLabel.bottomAnchor,
-                                               constant: 7),
+            
+            nameTextField.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 7),
             nameTextField.leadingAnchor.constraint(equalTo: nameLabel.leadingAnchor),
             nameTextField.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16),
             
-            colorLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 15),
             colorLabel.leadingAnchor.constraint(equalTo: nameLabel.leadingAnchor),
+            colorLabel.topAnchor.constraint(equalTo: nameTextField.bottomAnchor, constant: 15),
+            
             
             colorPickerView.leadingAnchor.constraint(equalTo: nameLabel.leadingAnchor),
             colorPickerView.topAnchor.constraint(equalTo: colorLabel.bottomAnchor, constant: 7),
-            colorPickerView.heightAnchor.constraint(equalTo: 30),
-            colorPickerView.widthAnchor.constraint(equalTo: 30),
+            colorPickerView.heightAnchor.constraint(equalToConstant: 30),
+            colorPickerView.widthAnchor.constraint(equalToConstant: 30),
             
             timeLabel.topAnchor.constraint(equalTo: colorPickerView.bottomAnchor, constant: 15),
             timeLabel.leadingAnchor.constraint(equalTo: nameLabel.leadingAnchor),
             
-            habitTimeLabelText.topAnchor.constraint(equalTo: timeLabel.bottomAnchor, constant: 7),
             habitTimeLabelText.leadingAnchor.constraint(equalTo: nameLabel.leadingAnchor),
-            habitTimeLabelTime.topAnchor.constraint(equalTo: habitTimeLabelText.topAnchor),
+            habitTimeLabelText.topAnchor.constraint(equalTo: timeLabel.bottomAnchor, constant: 7),
             habitTimeLabelTime.leadingAnchor.constraint(equalTo: habitTimeLabelText.trailingAnchor),
+            habitTimeLabelTime.topAnchor.constraint(equalTo: habitTimeLabelText.topAnchor),
             
-            datePicker.topAnchor.constraint(equalTo: habitTimeLabelText.bottomAnchor, constant: 15),
             datePicker.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
-            datePicker.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor)
+            datePicker.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            datePicker.topAnchor.constraint(equalTo: habitTimeLabelText.bottomAnchor, constant: 15),
         ])
     }
     
     //MARK: action
     
-    @objc func datePickerChanged(picker: UIDatePicker)
+    @objc func datePickerChanged(picker: UIDatePicker){
     if case .create = addHabitType {
         habit.date = datePicker.date
     }
-    habitTimeLabelTime.text = "\(dateFormatter.string(from: datePicker.data))"
-
+        
+    habitTimeLabelTime.text = " \(dateFormatter.string(from: datePicker.date))"
+    }
 
     @objc func tapColorPicker() {
-    present(UIColorPickerViewController, animated: true, complection: nil)
+    present(colorPickerViewController, animated: true, completion: nil)
 }
 
     @objc func deleteButtonPressed() {
@@ -281,19 +289,19 @@ class AddHabitController: UIViewController {
         habit.color = color
     }
     
-    switch AddHabitType {
+    switch addHabitType {
     case .create(let action): do {
         let store = HabitsStore.shared
         store.habits.append(habit)
         action?()
     }
     case .edit: do {
-        habit.date = DatePicker.date
+        habit.date = datePicker.date
     }
         
   }
     habitStore.save()
-    dismiss(animated: true, comletion: nil)
+    dismiss(animated: true, completion: nil)
  }
     
 }

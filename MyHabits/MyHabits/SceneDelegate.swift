@@ -51,7 +51,7 @@ return UITabBarItem(title: "Информация", image: UIImage(named: "infota
         let viewController: UIViewController
         switch tabItemType {
         case .habits:
-            viewController = HabitViewController()
+            viewController = HabitsViewController()
         case.info:
             viewController = InfoViewController()
         }
@@ -70,27 +70,5 @@ return UITabBarItem(title: "Информация", image: UIImage(named: "infota
         return tabBarController
     }
     
-    
-    func sceneDidDisconnect(_ scene: UIScene) {
-        
-    }
-
-    func sceneDidBecomeActive(_ scene: UIScene) {
-       
-    }
-
-    func sceneWillResignActive(_ scene: UIScene) {
-        
-    }
-
-    func sceneWillEnterForeground(_ scene: UIScene) {
-        
-    }
-
-    func sceneDidEnterBackground(_ scene: UIScene) {
-        
-    }
-
-
-}
+  }
 
