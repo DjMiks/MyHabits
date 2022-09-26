@@ -24,7 +24,7 @@ class HabitDetailsViewController: UIViewController {
         tableView.register(
             HabitDetailViewCell.self,
           forCellReuseIdentifier: HabitDetailViewCell.reuseID)
-        
+        tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.dataSource = self
         tableView.delegate = self
           return tableView

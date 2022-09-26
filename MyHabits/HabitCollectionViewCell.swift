@@ -31,7 +31,7 @@ class HabitCollectionViewCell: UICollectionViewCell {
     private lazy var dateLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.applyHeadlineStyle()
+        label.applyFootnoteStyle()
         label.textColor = .systemGray
           return label
     }()
@@ -61,7 +61,7 @@ class HabitCollectionViewCell: UICollectionViewCell {
           return imageView
     }()
     
-    //MARK: CYCLE
+    //MARK: LIFECYCLE
     
     override init(frame: CGRect) {
         super.init(frame: frame)

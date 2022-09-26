@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "49DC80B5-C4A8-488F-8F63-C638A96A80FD"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7B871D49-C169-4653-8FC3-E0E7BD2C4F2E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyHabits/HabitDetailsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "HabitDetailsViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "7B871D49-C169-4653-8FC3-E0E7BD2C4F2E - 302091a1edc7771c"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyHabits.HabitDetailsViewController.habitDates.getter : Swift.Array&lt;Foundation.Date&gt;"
+                  moduleName = "MyHabits"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/li/Desktop/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/Swift/UI/MyHabits/MyHabits/MyHabits/HabitDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "7B871D49-C169-4653-8FC3-E0E7BD2C4F2E - 7cb2741bbb8ea710"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyHabits.HabitDetailsViewController.habitDates.setter : Swift.Array&lt;Foundation.Date&gt;"
+                  moduleName = "MyHabits"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/li/Desktop/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/Swift/UI/MyHabits/MyHabits/MyHabits/HabitDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "7B871D49-C169-4653-8FC3-E0E7BD2C4F2E - eb17d3d4f27fab23"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyHabits.HabitDetailsViewController.habitDates.modify : Swift.Array&lt;Foundation.Date&gt;"
+                  moduleName = "MyHabits"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/li/Desktop/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/Swift/UI/MyHabits/MyHabits/MyHabits/HabitDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "7B871D49-C169-4653-8FC3-E0E7BD2C4F2E - 687f53549b7c11f5"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyHabits.HabitDetailsViewController.habitDates.modify : Swift.Array&lt;Foundation.Date&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "MyHabits"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/li/Desktop/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/Swift/UI/MyHabits/MyHabits/MyHabits/HabitDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "7B871D49-C169-4653-8FC3-E0E7BD2C4F2E - c7901d25a69022ea"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyHabits.HabitDetailsViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; MyHabits.HabitDetailsViewController"
+                  moduleName = "MyHabits"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/li/Desktop/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/Swift/UI/MyHabits/MyHabits/MyHabits/HabitDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "324">
+               </Location>
+               <Location
+                  uuid = "7B871D49-C169-4653-8FC3-E0E7BD2C4F2E - d2f37f7594468420"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyHabits.HabitDetailsViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;MyHabits.HabitDetailsViewController&gt;"
+                  moduleName = "MyHabits"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/li/Desktop/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/Swift/UI/MyHabits/MyHabits/MyHabits/HabitDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "292">
+               </Location>
+               <Location
+                  uuid = "7B871D49-C169-4653-8FC3-E0E7BD2C4F2E - bad7f7c72db8491"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Swift.Array&lt;Foundation.Date&gt; in MyHabits.HabitDetailsViewController.habitDates.getter : Swift.Array&lt;Foundation.Date&gt;"
+                  moduleName = "MyHabits"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/li/Desktop/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/Swift/UI/MyHabits/MyHabits/MyHabits/HabitDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "838FA5C9-2399-4065-9E6C-3895ABEC51EE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyHabits/HabitDetailsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "HabitDetailsViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "838FA5C9-2399-4065-9E6C-3895ABEC51EE - 35079068bf7e216c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyHabits.HabitDetailsViewController.habit.getter : MyHabits.Habit"
+                  moduleName = "MyHabits"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/li/Desktop/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/Swift/UI/MyHabits/MyHabits/MyHabits/HabitDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "838FA5C9-2399-4065-9E6C-3895ABEC51EE - 55b6053860ffc940"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyHabits.HabitDetailsViewController.habit.setter : MyHabits.Habit"
+                  moduleName = "MyHabits"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/li/Desktop/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/Swift/UI/MyHabits/MyHabits/MyHabits/HabitDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "838FA5C9-2399-4065-9E6C-3895ABEC51EE - e5fc8aca4e199b75"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyHabits.HabitDetailsViewController.habit.modify : MyHabits.Habit"
+                  moduleName = "MyHabits"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/li/Desktop/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/Swift/UI/MyHabits/MyHabits/MyHabits/HabitDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "838FA5C9-2399-4065-9E6C-3895ABEC51EE - 465b4bf75db5b06d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyHabits.HabitDetailsViewController.habit.modify : MyHabits.Habit with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "MyHabits"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/li/Desktop/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/Swift/UI/MyHabits/MyHabits/MyHabits/HabitDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "838FA5C9-2399-4065-9E6C-3895ABEC51EE - c7901d25a69022ac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyHabits.HabitDetailsViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; MyHabits.HabitDetailsViewController"
+                  moduleName = "MyHabits"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/li/Desktop/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/Swift/UI/MyHabits/MyHabits/MyHabits/HabitDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "168">
+               </Location>
+               <Location
+                  uuid = "838FA5C9-2399-4065-9E6C-3895ABEC51EE - d2f37f7594468466"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyHabits.HabitDetailsViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;MyHabits.HabitDetailsViewController&gt;"
+                  moduleName = "MyHabits"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/li/Desktop/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/Swift/UI/MyHabits/MyHabits/MyHabits/HabitDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "136">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AAD22C33-6E46-4059-89D1-8B83F4526891"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyHabits/HabitDetailsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "tableView(_:titleForHeaderInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4B0D72F6-BEFA-4CDC-8074-FD622C41DEF4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyHabits/HabitDetailsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "habitDates"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "4B0D72F6-BEFA-4CDC-8074-FD622C41DEF4 - 302091a1edc7771c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyHabits.HabitDetailsViewController.habitDates.getter : Swift.Array&lt;Foundation.Date&gt;"
+                  moduleName = "MyHabits"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/li/Desktop/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/Swift/UI/MyHabits/MyHabits/MyHabits/HabitDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "4B0D72F6-BEFA-4CDC-8074-FD622C41DEF4 - 7cb2741bbb8ea710"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyHabits.HabitDetailsViewController.habitDates.setter : Swift.Array&lt;Foundation.Date&gt;"
+                  moduleName = "MyHabits"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/li/Desktop/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/Swift/UI/MyHabits/MyHabits/MyHabits/HabitDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "4B0D72F6-BEFA-4CDC-8074-FD622C41DEF4 - eb17d3d4f27fab23"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyHabits.HabitDetailsViewController.habitDates.modify : Swift.Array&lt;Foundation.Date&gt;"
+                  moduleName = "MyHabits"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/li/Desktop/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/Swift/UI/MyHabits/MyHabits/MyHabits/HabitDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "4B0D72F6-BEFA-4CDC-8074-FD622C41DEF4 - 687f53549b7c11f5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyHabits.HabitDetailsViewController.habitDates.modify : Swift.Array&lt;Foundation.Date&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "MyHabits"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/li/Desktop/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/Swift/UI/MyHabits/MyHabits/MyHabits/HabitDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "4B0D72F6-BEFA-4CDC-8074-FD622C41DEF4 - c7901d25a69022ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyHabits.HabitDetailsViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; MyHabits.HabitDetailsViewController"
+                  moduleName = "MyHabits"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/li/Desktop/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/Swift/UI/MyHabits/MyHabits/MyHabits/HabitDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "324">
+               </Location>
+               <Location
+                  uuid = "4B0D72F6-BEFA-4CDC-8074-FD622C41DEF4 - d2f37f7594468420"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyHabits.HabitDetailsViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;MyHabits.HabitDetailsViewController&gt;"
+                  moduleName = "MyHabits"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/li/Desktop/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/Swift/UI/MyHabits/MyHabits/MyHabits/HabitDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "292">
+               </Location>
+               <Location
+                  uuid = "4B0D72F6-BEFA-4CDC-8074-FD622C41DEF4 - bad7f7c72db8491"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Swift.Array&lt;Foundation.Date&gt; in MyHabits.HabitDetailsViewController.habitDates.getter : Swift.Array&lt;Foundation.Date&gt;"
+                  moduleName = "MyHabits"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/li/Desktop/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/Swift/UI/MyHabits/MyHabits/MyHabits/HabitDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D51980AA-0B3C-40AE-AAD6-325B98E887B8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyHabits/SceneDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "tabBarItem"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

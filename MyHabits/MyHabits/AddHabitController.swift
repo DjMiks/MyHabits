@@ -45,6 +45,7 @@ class AddHabitController: UIViewController, UITextFieldDelegate {
     //MARK: DATA
     
     var habit = Habit(name: "Выпить стакан воды перед завтраком", date: Date(), color: .systemRed)
+    
     private lazy var habitStore: HabitsStore = {
         return HabitsStore.shared
     }()
@@ -56,18 +57,18 @@ class AddHabitController: UIViewController, UITextFieldDelegate {
         let navItem = UINavigationItem()
         let leftBarButtonItem = UIBarButtonItem(title: "Отменить", style: UIBarButtonItem.Style.plain, target: self, action: #selector(actionCencelButton))
         let rightBarButtonItem = UIBarButtonItem(title: "Сохранить", style: UIBarButtonItem.Style.done, target: self, action: #selector(actionSaveButton))
-        
+       
         navBar.translatesAutoresizingMaskIntoConstraints = false
         navBar.backgroundColor = .systemGray
+        navBar.setItems([navItem], animated: true)
         
         leftBarButtonItem.tintColor = Styles.purpleColor
         rightBarButtonItem.tintColor = Styles.purpleColor
         
+        navItem.title = addHabitType.title
         navItem.rightBarButtonItem = rightBarButtonItem
         navItem.leftBarButtonItem = leftBarButtonItem
-        navItem.title = addHabitType.title
-        
-        navBar.setItems([navItem], animated: true)
+            
           return navBar
     }()
     
@@ -91,13 +92,12 @@ class AddHabitController: UIViewController, UITextFieldDelegate {
     
     lazy var nameTextField: UITextField = {
         let textField = UITextField()
+        textField.translatesAutoresizingMaskIntoConstraints = false
         textField.placeholder = "Бегать по утрам, спать 8 часов."
         textField.font = UIFont.systemFont(ofSize: 13, weight: .regular)
         
         textField.delegate = self
-        
-        textField.translatesAutoresizingMaskIntoConstraints = false
-          return textField
+         return textField
     }()
     
     private lazy var colorLabel: UILabel = {
@@ -215,11 +215,10 @@ class AddHabitController: UIViewController, UITextFieldDelegate {
             
             nameLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16),
             nameLabel.topAnchor.constraint(equalTo: navBar.bottomAnchor, constant:22),
-            
-            
-            nameTextField.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 7),
+                                    
             nameTextField.leadingAnchor.constraint(equalTo: nameLabel.leadingAnchor),
             nameTextField.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16),
+            nameTextField.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 7),
             
             colorLabel.leadingAnchor.constraint(equalTo: nameLabel.leadingAnchor),
             colorLabel.topAnchor.constraint(equalTo: nameTextField.bottomAnchor, constant: 15),
@@ -230,8 +229,9 @@ class AddHabitController: UIViewController, UITextFieldDelegate {
             colorPickerView.heightAnchor.constraint(equalToConstant: 30),
             colorPickerView.widthAnchor.constraint(equalToConstant: 30),
             
-            timeLabel.topAnchor.constraint(equalTo: colorPickerView.bottomAnchor, constant: 15),
+            
             timeLabel.leadingAnchor.constraint(equalTo: nameLabel.leadingAnchor),
+            timeLabel.topAnchor.constraint(equalTo: colorPickerView.bottomAnchor, constant: 15),
             
             habitTimeLabelText.leadingAnchor.constraint(equalTo: nameLabel.leadingAnchor),
             habitTimeLabelText.topAnchor.constraint(equalTo: timeLabel.bottomAnchor, constant: 7),

@@ -62,7 +62,7 @@ return UITabBarItem(title: "Информация", image: UIImage(named: "infota
     
     private func createTabBatController()-> UITabBarController {
         let tabBarController = UITabBarController()
-        UITabBar.appearance().backgroundColor = .systemGray5
+        UITabBar.appearance().backgroundColor = .systemGray6
         tabBarController.viewControllers = [
             self.createNavigationController(for: .habits),
             self.createNavigationController(for: .info)

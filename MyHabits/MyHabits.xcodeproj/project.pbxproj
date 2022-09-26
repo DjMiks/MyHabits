@@ -78,19 +78,18 @@
 			children = (
 				0A4DF3E528BE6C220045C3D2 /* AppDelegate.swift */,
 				0A4DF3E728BE6C220045C3D2 /* SceneDelegate.swift */,
+				0A4DF3F028BE6C230045C3D2 /* LaunchScreen.storyboard */,
 				0A4DF3F328BE6C230045C3D2 /* Info.plist */,
+				0AD9E87128D8574D004C759D /* Info */,
 				0A4DF40928BFC3DC0045C3D2 /* Text \ Styles */,
 				0A4DF3F928BFB6AA0045C3D2 /* HabitsStore.swift */,
-				0A4DF41828C238C70045C3D2 /* AddHabitController.swift */,
-				0A4DF3FB28BFB9820045C3D2 /* HabitsViewController.swift */,
-				0A4DF41628C2305A0045C3D2 /* HabitCollectionViewCell.swift */,
-				0A4DF41E28C63DE60045C3D2 /* HabitDetailViewCell.swift */,
-				0A4DF40E28C114740045C3D2 /* HabitDetailsViewController.swift */,
 				0A4DF40C28C114290045C3D2 /* ProgressCollectionViewCell.swift */,
-				0A4DF41928C23A110045C3D2 /* Info.swift */,
-				0A4DF3FD28BFB9AF0045C3D2 /* InfoViewController.swift */,
+				0A4DF3FB28BFB9820045C3D2 /* HabitsViewController.swift */,
+				0A4DF41828C238C70045C3D2 /* AddHabitController.swift */,
+				0A4DF41628C2305A0045C3D2 /* HabitCollectionViewCell.swift */,
+				0A4DF40E28C114740045C3D2 /* HabitDetailsViewController.swift */,
+				0A4DF41E28C63DE60045C3D2 /* HabitDetailViewCell.swift */,
 				0A4DF3EE28BE6C230045C3D2 /* Assets.xcassets */,
-				0A4DF3F028BE6C230045C3D2 /* LaunchScreen.storyboard */,
 			);
 			path = MyHabits;
 			sourceTree = "<group>";
@@ -104,6 +103,15 @@
 				0A4DF40B28BFC3E70045C3D2 /* SFPRODISPLAYSEMIBOLDITALIC.OTF */,
 			);
 			path = "Text \\ Styles";
+			sourceTree = "<group>";
+		};
+		0AD9E87128D8574D004C759D /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				0A4DF3FD28BFB9AF0045C3D2 /* InfoViewController.swift */,
+				0A4DF41928C23A110045C3D2 /* Info.swift */,
+			);
+			path = Info;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
