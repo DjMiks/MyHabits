@@ -22,8 +22,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.makeKeyAndVisible()
     }
     
-    private enum TabItemTepy {
-        case habits
+    private enum TabItemTepy: String {
+        case habits 
         case info
         
         var title: String{

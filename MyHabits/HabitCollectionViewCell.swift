@@ -40,10 +40,11 @@ class HabitCollectionViewCell: UICollectionViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.applyCaptionStyle()
-        label.applyFootnoteStyle()
         label.text = "Счётчик: \(habit.trackDates.count)"
+        label.applyFootnoteStyle()
           return label
      }()
+    
     private lazy var checkBoxButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -54,10 +55,10 @@ class HabitCollectionViewCell: UICollectionViewCell {
          return button
     }()
     
-    private lazy var chekMarkImageView: UIImageView = {
+    private lazy var checkMarkImageView: UIImageView = {
         let imageView = UIImageView(image: UIImage.init(systemName: "checkmark"))
-        imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.tintColor = .white
+        imageView.translatesAutoresizingMaskIntoConstraints = false
           return imageView
     }()
     
@@ -86,7 +87,7 @@ class HabitCollectionViewCell: UICollectionViewCell {
         contentView.addSubview(dateLabel)
         contentView.addSubview(trackerLabel)
         contentView.addSubview(checkBoxButton)
-        contentView.addSubview(chekMarkImageView)
+        contentView.addSubview(checkMarkImageView)
     }
     
     private func setupConstraints() {
@@ -106,8 +107,8 @@ class HabitCollectionViewCell: UICollectionViewCell {
             checkBoxButton.widthAnchor.constraint(equalToConstant: imageSize),
             checkBoxButton.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -47),
             
-            chekMarkImageView.centerXAnchor.constraint(equalTo: checkBoxButton.centerXAnchor),
-            chekMarkImageView.centerYAnchor.constraint(equalTo: checkBoxButton.centerYAnchor)
+            checkMarkImageView.centerXAnchor.constraint(equalTo: checkBoxButton.centerXAnchor),
+            checkMarkImageView.centerYAnchor.constraint(equalTo: checkBoxButton.centerYAnchor)
       ])
     }
         
@@ -120,12 +121,12 @@ class HabitCollectionViewCell: UICollectionViewCell {
         
         nameLabel.textColor = habit.color
         nameLabel.text = habit.name
-        nameLabel.text = habit.dateString
-        nameLabel.applyCaptionStyle()
+        dateLabel.text = habit.dateString
+        dateLabel.applyCaptionStyle()
         checkBoxButton.layer.borderColor = habit.color.cgColor
         trackerLabel.text = "Счетчик: \(habit.trackDates.count)"
         
-        chekMarkImageView.isHidden = !habit.isAlreadyTakenToday
+        checkMarkImageView.isHidden = !habit.isAlreadyTakenToday
         
         if habit.isAlreadyTakenToday{
             checkBoxButton.backgroundColor = habit.color
@@ -144,7 +145,7 @@ class HabitCollectionViewCell: UICollectionViewCell {
             checkBoxButton.backgroundColor = habit.color
         }
         habitTapCallback?()
-        chekMarkImageView.isHidden = !habit.isAlreadyTakenToday
+        checkMarkImageView.isHidden = !habit.isAlreadyTakenToday
     }
     
 }
